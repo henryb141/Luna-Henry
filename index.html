@@ -198,6 +198,36 @@
     color: #8a9a70;
     margin-top: 4px;
   }
+
+  /* ── Fade & rise animations ── */
+  @keyframes fadeRise {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .card      { animation: fadeIn 1s ease forwards; }
+  .venue img { animation: fadeIn 1.2s ease forwards; }
+
+  .double-rule-anim {
+    animation: fadeIn 0.8s ease forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+
+  .anim-1  { animation: fadeRise 0.7s ease forwards; animation-delay: 0.8s;  opacity: 0; }
+  .anim-2  { animation: fadeRise 0.7s ease forwards; animation-delay: 1.0s;  opacity: 0; }
+  .anim-3  { animation: fadeRise 0.7s ease forwards; animation-delay: 1.2s;  opacity: 0; }
+  .anim-4  { animation: fadeRise 0.7s ease forwards; animation-delay: 1.4s;  opacity: 0; }
+  .anim-5  { animation: fadeRise 0.7s ease forwards; animation-delay: 1.6s;  opacity: 0; }
+  .anim-6  { animation: fadeRise 0.7s ease forwards; animation-delay: 1.8s;  opacity: 0; }
+  .anim-7  { animation: fadeRise 0.7s ease forwards; animation-delay: 2.0s;  opacity: 0; }
+  .anim-8  { animation: fadeRise 0.7s ease forwards; animation-delay: 2.2s;  opacity: 0; }
+  .anim-9  { animation: fadeRise 0.7s ease forwards; animation-delay: 2.4s;  opacity: 0; }
+  .anim-10 { animation: fadeRise 0.7s ease forwards; animation-delay: 2.6s;  opacity: 0; }
 </style>
 </head>
 <body>
@@ -248,7 +278,7 @@
   </div>
 
   <!-- Botanical sprig -->
-  <div style="padding: 22px 48px 6px; position: relative; z-index: 5;">
+  <div class="double-rule-anim" style="padding: 22px 48px 6px; position: relative; z-index: 5;">
     <div style="height:1px; background:linear-gradient(to right, transparent, #8a9070, transparent);"></div>
     <div style="height:1px; background:linear-gradient(to right, transparent, #8a9070, transparent); margin-top:5px;"></div>
   </div>
@@ -256,11 +286,11 @@
   <!-- Invitation body -->
   <div class="body">
 
-    <div class="names">Luna</div>
-    <span class="amp">&amp;</span>
-    <div class="names">Henry</div>
+    <div class="names anim-1">Luna</div>
+    <span class="amp anim-2">&amp;</span>
+    <div class="names anim-3">Henry</div>
 
-    <div class="rule">
+    <div class="rule anim-4">
       <div class="rule-line"></div>
       <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
         <circle cx="10" cy="10" r="2.5" fill="#8a9070" opacity="0.55"/>
@@ -272,21 +302,21 @@
       <div class="rule-line r"></div>
     </div>
 
-    <div class="body-text">
+    <div class="body-text anim-5">
       Request the pleasure of your company<br>
       at their marriage
     </div>
 
-    <div class="date-big">Saturday, 17th October</div>
-    <div class="date-year">· · · 2026 · · ·</div>
+    <div class="date-big anim-6">Saturday, 17th October</div>
+    <div class="date-year anim-6">· · · 2026 · · ·</div>
 
-    <div class="hr"></div>
+    <div class="hr anim-9"></div>
 
-    <div class="detail-lbl">Venue</div>
+    <div class="anim-7"><div class="detail-lbl">Venue</div>
     <div class="detail-val">St Audries Park</div>
     <div class="detail-sub">West Quantoxhead, Somerset, TA4 4DS</div>
 
-    <div class="two-col" style="margin-top: 20px;">
+    </div><div class="two-col anim-8" style="margin-top: 20px;">
       <div class="col">
         <div class="detail-lbl">Ceremony</div>
         <div class="detail-val" style="font-size:15px;">1:30 pm</div>
@@ -298,14 +328,14 @@
       </div>
     </div>
 
-    <div class="hr"></div>
+    <div class="hr anim-9"></div>
 
     <div class="detail-lbl">Dress Code</div>
     <div class="detail-val" style="font-size:15px;">Dress to celebrate</div>
     <div class="detail-sub" style="margin-top:4px;">Suits &amp; ties / party dresses</div>
     <div class="detail-sub" style="margin-top:3px; font-style:italic;">We kindly ask guests to avoid olive green — our bridal party will be wearing this colour!</div>
 
-    <div class="bottom-note">
+    <div class="bottom-note anim-10">
       Kindly RSVP by &nbsp;·&nbsp; <strong style="color:#3d4f2c; letter-spacing:2px;">1st August 2026</strong>
     </div>
 
